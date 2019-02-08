@@ -23,6 +23,11 @@ try
 	
 	switch (_seatToGetIn) do 
 	{
+		case "Driver":
+		{
+			if !(isNull Driver _vehicle) throw false;
+			if !(_vehicle emptyPositions "Driver" > 0) throw false;
+		};
 		case "Gunner":
 		{
 			if !(isNull Gunner _vehicle) throw false;
@@ -34,7 +39,10 @@ try
 			if !(_vehicle emptyPositions "Commander" > 0) throw false;
 		};
 		default
-		{};
+		{
+			if !(isNull Driver _vehicle) throw false;
+			if !(_vehicle emptyPositions "Driver" > 0) throw false;
+		};
 	};
 }
 catch
