@@ -9,6 +9,7 @@
  * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
  */
 
+private["_seatToGetIn", "_vehicle", "_type", "_config", "_displayVehicle", "_displayMessage"];
 _seatToGetIn = _this select 0;
 _vehicle = ExileClientInteractionObject;
 _type = (typeOf (vehicle _vehicle));

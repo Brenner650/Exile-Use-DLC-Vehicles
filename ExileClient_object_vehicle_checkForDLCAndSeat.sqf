@@ -8,7 +8,8 @@
  * This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. 
  * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
  */
- 
+
+private["_seatToGetIn", "_vehicle", "_ownedDLCs", "_vehicleDLC", "_canGetIn"];
 _seatToGetIn = _this select 0;
 _vehicle = ExileClientInteractionObject;
 _ownedDLCs = getDLCs 1;
